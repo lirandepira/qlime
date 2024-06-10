@@ -29,3 +29,12 @@ bumpver upgrade -minor
 ```Shell
 bumpver upgrade -major
 ```
+
+## Publish to the TEST Pypi repository
+
+Once the version has been bumped use:
+```Shell
+rm -rf dist/
+python -m build
+twine upload -r testpypi dist/*
+```
