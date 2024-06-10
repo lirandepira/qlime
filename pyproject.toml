@@ -3,11 +3,11 @@ requires= [ "setuptools>=61.0.0", "wheel", "bumpver"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name='qlime'
-version='0.0.1'
+name = 'qlime'
+version = '0.0.1'
 description='QLIME (Quantum Local Interpretable Model-agnostic Explanations) is a Python package for interpreting quantum neural networks using local surrogate models.'
-readme= "Readme.md"
-author=[{ name= " Quantum Lime", email = "quantumlime@outlook.com"}]
+readme = "Readme.md"
+authors = [{ name= " Quantum Lime", email = "quantumlime@outlook.com"}]
 license = { file = "LICENSE" }
 dependencies = [
         'numpy',
