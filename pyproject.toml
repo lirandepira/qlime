@@ -34,7 +34,7 @@ push = false
 
 [tool.bumpver.file_patterns]
 "pyproject.toml" = [
-    'version = "{version}"',
+    '^version = "{version}"',
     'current_version = "{version}"'
 ]
 #"Readme.md" = [
