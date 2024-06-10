@@ -1,5 +1,5 @@
 import numpy as np
-from qlime.model import qnn
+from src.qlime.model import qnn
 
 def optimize(X_train, Y_train, a= 2.5, c = 0.25, maxiter = 1e3, shots = int(1e4), alpha = 0.602, gamma = 0.101):
   f = lambda x: objective(x, X_train, Y_train, shots=shots)  # Objective function

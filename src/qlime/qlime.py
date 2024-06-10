@@ -2,12 +2,10 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.colors import ListedColormap
 import matplotlib.colors as colors
 from sklearn.linear_model import LogisticRegression
 
-import qlime.optimizer
-from qlime.model import qnn
+from src.qlime.model import qnn
 
 def explain(local_idx, X_train, optimized, model, eps = 0.45, local_samples = 100, local_region = 0.025, n_samples = 25):
 
