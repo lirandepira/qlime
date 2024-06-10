@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = 'qlime'
-version = '0.1.0'
-description='QLIME (Quantum Local Interpretable Model-agnostic Explanations) is a Python package for interpreting quantum neural networks using local surrogate models.'
+version = "0.1.0"
+description='QLIME (Quantum Local Interpretable Model-agnostic Explanations) is a Python library for interpreting quantum neural networks using local surrogate models.'
 readme = "Readme.md"
 authors = [{ name= " Quantum Lime", email = "quantumlime@outlook.com"}]
 license = { file = "LICENSE" }
