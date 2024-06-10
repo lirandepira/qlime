@@ -37,8 +37,8 @@ push = false
     'current_version = "{version}"',
         'version = "{version}"'
 ]
-"README.md" = [
-    "{version}",
-    "{pep440_version}",
-]
+#"Readme.md" = [
+#    "{version}",
+#    "{pep440_version}",
+#]
 
