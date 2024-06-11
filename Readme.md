@@ -1,6 +1,6 @@
 # Description
 
-# Usage guide
+# User guide
 
 # Administration Guide
 ## Bump version
@@ -32,7 +32,7 @@ bumpver upgrade -major
 
 ## Publish to the TEST Pypi repository
 
-Once the version has been bumped use:
+Once the version number has been properly bumped use (note your credentials must be properly setup into your `$HOME/.pypirc` file:
 ```Shell
 rm -rf dist/
 python -m build
