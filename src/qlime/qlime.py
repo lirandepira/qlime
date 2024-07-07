@@ -36,16 +36,15 @@ def explain(local_idx, X_train, optimized, model, eps = 0.45, local_samples = 10
   Z = []
   for idx1, idx2 in zip(x1.ravel(),x2.ravel()):
     Z.append(round(qnn(np.array([idx1, idx2]), optimized)))
+  Z = np.array(Z).reshape(x1.shape)
+  return Z
 
-#  return Z
-
-#def explain_plot(local_idx, X_train, model, eps=0.45, local_samples=100, local_region=0.025, n_samples=25):
+def explain_plot(local_idx, X_train, model, eps=0.45, local_samples=100, local_region=0.025, n_samples=25):
   #Z= explain(local_idx,X_train,model,eps,local_samples,local_region,n_samples)
   # Create a custom colormap
   custom_colors = ['#F27200', '#004D80']
   custom_cmap = colors.ListedColormap(custom_colors)
 
-  Z = np.array(Z).reshape(x1.shape)
   plt.pcolormesh(x1, x2, Z, alpha=0.4, cmap=custom_cmap)
 
   plt.plot(x[local_idx,0], x[local_idx,1], marker="o", markersize=12, markeredgecolor="k",
@@ -70,6 +69,9 @@ def explain(local_idx, X_train, optimized, model, eps = 0.45, local_samples = 10
 
 #optimized= qlime.optimizer.optimize(Xtrain, Ytrain)
 #explain(local_idx, xtrain, optimized, model)
+
+
+
 
 
 
