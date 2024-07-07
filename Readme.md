@@ -38,3 +38,12 @@ rm -rf dist/
 python -m build
 twine upload -r testpypi dist/*
 ```
+
+## Publish to the PROD Pypi repository
+
+Once the version number has been properly bumped use (note your credentials must be properly setup into your `$HOME/.pypirc` file:
+```Shell
+rm -rf dist/
+python -m build
+twine upload -r pypi dist/*
+```
