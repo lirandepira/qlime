@@ -54,7 +54,8 @@ def qnn(X, theta, shots=int(1e3)):
     qc.measure(0, c)
 
     backend = Aer.get_backend("qasm_simulator")
-    job = backend.run(transpile(qc, backend, shots=shots))
+    circuits = transpile(qc, backend)
+    job = backend.run(circuits, shots=shots)
     result = job.result()
     counts = result.get_counts(qc)
     return counts["1"] / shots
