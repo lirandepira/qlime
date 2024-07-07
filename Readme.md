@@ -15,19 +15,19 @@ pip install bumpver
 ### Bump Z in X.Y.Z
 
 ```Shell
-bumpver update -patch
+bumpver update --patch
 ```
 
 ### Bump Y in X.Y.Z
 
 ```Shell
-bumpver update -minor
+bumpver update --minor
 ```
 
 ### Bump X in X.Y.Z
 
 ```Shell
-bumpver update -major
+bumpver update --major
 ```
 
 ## Publish to the TEST Pypi repository
