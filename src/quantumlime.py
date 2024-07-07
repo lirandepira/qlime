@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import matplotlib.colors as colors
 from sklearn.linear_model import LogisticRegression
 import qiskit as qk
-from qiskit_aer import Aer
 import numpy as np
 
 def encode(X, layers=2):
@@ -52,7 +51,7 @@ def qnn(X, theta, shots=int(1e3)):
     qc = variational_circuit(qc, theta)
     qc.measure(0, c)
 
-    backend = Aer.get_backend("qasm_simulator")
+    backend = qk.Aer.get_backend("qasm_simulator")
     job = qk.execute(qc, backend, shots=shots)
     result = job.result()
     counts = result.get_counts(qc)

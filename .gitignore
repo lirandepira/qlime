@@ -1,3 +1,4 @@
 .idea
 src/qlime.egg-info
 dist
+src/quantumlime.egg-info
