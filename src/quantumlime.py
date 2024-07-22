@@ -188,7 +188,7 @@ def region_of_indecision(local_idx, X_train, xsol, model, eps = 0.45, local_samp
   # Add the legend
   elements = ['Marker', 'Local region of indecision']
   plt.legend(elements, loc='lower right')
-  plt.draw()
+  plt.show()
 
 
 
