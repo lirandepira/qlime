@@ -132,7 +132,7 @@ def spsa(func, x0, a=0.1, c=0.1, alpha=0.602, gamma=0.101, maxiter=100, verbose=
 
   return x
 
-def region_of_indecision(local_idx, X_train, optimized, model, eps = 0.45, local_samples = 100, local_region = 0.025, n_samples = 25):
+def region_of_indecision(local_idx, X_train, xsol, model, eps = 0.45, local_samples = 100, local_region = 0.025, n_samples = 25):
 
   lines = np.zeros([n_samples, 100])
 
@@ -160,7 +160,7 @@ def region_of_indecision(local_idx, X_train, optimized, model, eps = 0.45, local
 
   Z = []
   for idx1, idx2 in zip(x1.ravel(),x2.ravel()):
-    Z.append(round(qnn(np.array([idx1, idx2]), optimized)))
+    Z.append(round(qnn(np.array([idx1, idx2]), xsol)))
   Z = np.array(Z).reshape(x1.shape)
 
   # Create a custom colormap
@@ -188,6 +188,7 @@ def region_of_indecision(local_idx, X_train, optimized, model, eps = 0.45, local
   # Add the legend
   elements = ['Marker', 'Local region of indecision']
   plt.legend(elements, loc='lower right')
+  plt.draw()
 
 
 
