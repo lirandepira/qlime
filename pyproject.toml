@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = 'quantumlime'
-version = "1.6.0"
+version = "1.7.0"
 description='QLIME (Quantum Local Interpretable Model-agnostic Explanations) is a Python library for interpreting quantum neural networks using local surrogate models.'
 readme = "Readme.md"
 authors = [{ name= " Quantum Lime", email = "quantumlime@outlook.com"}]
@@ -22,7 +22,7 @@ requires-python = ">=3.9"
 Homepage = "https://github.com/lirandepira/qlime"
 
 [tool.bumpver]
-current_version = "1.6.0"
+current_version = "1.7.0"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message = "bump version {old_version} -> {new_version}"
 tag_message = "{new_version}"
