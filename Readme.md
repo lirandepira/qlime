@@ -2,7 +2,7 @@
 
 # User guide
 
-You can find below a sample client python script calling Quantumlime
+You can find below a sample client python script calling quantumlime
 
 ```Python
 from sklearn.model_selection import train_test_split
