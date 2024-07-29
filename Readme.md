@@ -1,8 +1,10 @@
 # Description
 
+This library is intended for defining regions of non-interpretability for quantum learning models. The current versions is limited in scope as it extends a specific example introdcued in the research paper: https://arxiv.org/abs/2308.11098
+
 # User guide
 
-You can find below a sample client python script calling quantumlime
+You can find below a sample client python script calling quantumlime.
 
 ```Python
 from sklearn.model_selection import train_test_split
